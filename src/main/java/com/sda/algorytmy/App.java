@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println(fibonacciR(20-1));
+        System.out.println(fibonacciR(5));
 
         System.out.println(Arrays.toString(fibonacciI(20)));
 
@@ -29,10 +29,7 @@ public class App {
     }
 
     private static int fibonacciR(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        if (n == 1) {
+        if (n <= 2) {
             return 1;
         }
 
